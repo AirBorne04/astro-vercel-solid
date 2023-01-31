@@ -11,9 +11,10 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/solid-js": "^1.2.3",
-    "@astrojs/vercel": "^2.4.0",
-    "astro": "^1.9.0",
-    "solid-js": "^1.4.3"
+    "@astrojs/solid-js": "^2.0.1",
+    "@astrojs/vercel": "^3.0.0",
+    "astro": "^2.0.4",
+    "edge-runtime": "^2.0.3",
+    "solid-js": "^1.6.10"
   }
 }

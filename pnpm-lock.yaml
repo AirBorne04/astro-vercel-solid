@@ -4,12 +4,14 @@ specifiers:
   '@astrojs/solid-js': ^1.2.3
   '@astrojs/vercel': ^2.4.0
   astro: ^1.9.0
+  edge-runtime: ^2.0.3
   solid-js: ^1.4.3
 
 dependencies:
   '@astrojs/solid-js': 1.2.3_solid-js@1.6.9
   '@astrojs/vercel': 2.4.0
   astro: 1.9.2
+  edge-runtime: 2.0.3
   solid-js: 1.6.9
 
 packages:
@@ -382,6 +384,23 @@ packages:
       '@babel/helper-string-parser': 7.19.4
       '@babel/helper-validator-identifier': 7.19.1
       to-fast-properties: 2.0.0
+    dev: false
+
+  /@edge-runtime/format/2.0.0:
+    resolution: {integrity: sha512-y0KPyCwbIiuRDc8qZ9JHJZp+SFqeHOTEpbAFwmXtEhK1sJsKhF3j+R8zn2TtpW3TKMb7d62RWbiqo3gZWwWkMQ==}
+    engines: {node: '>=14'}
+    dev: false
+
+  /@edge-runtime/primitives/2.0.3:
+    resolution: {integrity: sha512-+y39BANcePTGKAE+0R8xX3UFzwTqWQOVUaC+UXsKjA45jGNfZCkGnJgGjJPXZftmxiLcl9R2lYyDvHN+55dUlw==}
+    engines: {node: '>=14'}
+    dev: false
+
+  /@edge-runtime/vm/2.0.3:
+    resolution: {integrity: sha512-l0fTtkBIPozgr8vQ46LXCSrp40WBWSNFQy/wGpydAsXznm6So90/ZsZD9hFLiudT2dnPJAWFtdNHcTpEKv8smA==}
+    engines: {node: '>=14'}
+    dependencies:
+      '@edge-runtime/primitives': 2.0.3
     dev: false
 
   /@emmetio/abbreviation/2.2.3:
@@ -1072,6 +1091,11 @@ packages:
     resolution: {integrity: sha512-ty/fTekppD2fIwRvnZAVdeOiGd1c7YXEixbgJTNzqcxJWKQnjJ/V1bNEEE6hygpM3WjwHFUVK6HTjWSzV4a8sQ==}
     dev: false
 
+  /convert-hrtime/3.0.0:
+    resolution: {integrity: sha512-7V+KqSvMiHp8yWDuwfww06XleMWVVB9b9tURBx+G7UTADuo5hYPuowKloz4OzOqbPezxgo+fdQ1522WzPG4OeA==}
+    engines: {node: '>=8'}
+    dev: false
+
   /convert-source-map/1.9.0:
     resolution: {integrity: sha512-ASFBup0Mz1uyiIjANan1jzLQami9z1PoYSZCiiYW2FczPbenXc45FZdBZLzOT+r6+iciuEModtmCti+hjaAk0A==}
     dev: false
@@ -1184,6 +1208,22 @@ packages:
 
   /eastasianwidth/0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
+    dev: false
+
+  /edge-runtime/2.0.3:
+    resolution: {integrity: sha512-9s5h/HcB/cdZw2MaCWnyQN/TBZM3TrRTFipV1T7WlnXTu+ajDEtcp1or29pd+/+WJc3mWkY4LwUMKnt6lT/oUw==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dependencies:
+      '@edge-runtime/format': 2.0.0
+      '@edge-runtime/vm': 2.0.3
+      exit-hook: 2.2.1
+      http-status: 1.5.3
+      mri: 1.2.0
+      picocolors: 1.0.0
+      pretty-bytes: 5.6.0
+      pretty-ms: 7.0.1
+      time-span: 4.0.0
     dev: false
 
   /electron-to-chromium/1.4.284:
@@ -1486,6 +1526,11 @@ packages:
       onetime: 6.0.0
       signal-exit: 3.0.7
       strip-final-newline: 3.0.0
+    dev: false
+
+  /exit-hook/2.2.1:
+    resolution: {integrity: sha512-eNTPlAD67BmP31LDINZ3U7HSF8l57TxOY2PmBJ1shpCvpnxBF93mWCE8YHBnXs8qiUZJc9WDcWIeC3a2HIAMfw==}
+    engines: {node: '>=6'}
     dev: false
 
   /extend-shallow/2.0.1:
@@ -1816,6 +1861,11 @@ packages:
 
   /html-void-elements/2.0.1:
     resolution: {integrity: sha512-0quDb7s97CfemeJAnW9wC0hw78MtW7NU3hqtCD75g2vFlDLt36llsYD7uB7SUzojLMP24N5IatXf7ylGXiGG9A==}
+    dev: false
+
+  /http-status/1.5.3:
+    resolution: {integrity: sha512-jCClqdnnwigYslmtfb28vPplOgoiZ0siP2Z8C5Ua+3UKbx410v+c+jT+jh1bbI4TvcEySuX0vd/CfFZFbDkJeQ==}
+    engines: {node: '>= 0.4.0'}
     dev: false
 
   /https-proxy-agent/5.0.1:
@@ -2788,6 +2838,11 @@ packages:
       unist-util-visit-children: 2.0.1
     dev: false
 
+  /parse-ms/2.1.0:
+    resolution: {integrity: sha512-kHt7kzLoS9VBZfUsiKjv43mr91ea+U05EyKkEtqp7vNbHxmaVuEqN7XxeEVnGrMtYOAxGrDElSi96K7EgO1zCA==}
+    engines: {node: '>=6'}
+    dev: false
+
   /parse5/6.0.1:
     resolution: {integrity: sha512-Ofn/CTFzRGTTxwpNEs9PP93gXShHcTq255nzRYSKe8AkVpZY7e1fpmTfOyoIvjP5HG7Z2ZM7VS9PPhQGW2pOpw==}
     dev: false
@@ -2895,6 +2950,18 @@ packages:
     resolution: {integrity: sha512-tJ/oJ4amDihPoufT5sM0Z1SKEuKay8LfVAMlbbhnnkvt6BUserZylqo2PN+p9KeljLr0OHa2rXHU1T8reeoTrw==}
     engines: {node: '>=10.13.0'}
     hasBin: true
+    dev: false
+
+  /pretty-bytes/5.6.0:
+    resolution: {integrity: sha512-FFw039TmrBqFK8ma/7OL3sDz/VytdtJr044/QUJtH0wK9lb9jLq9tJyIxUwtQJHwar2BqtiA4iCWSwo9JLkzFg==}
+    engines: {node: '>=6'}
+    dev: false
+
+  /pretty-ms/7.0.1:
+    resolution: {integrity: sha512-973driJZvxiGOQ5ONsFhOF/DtzPMOMtgC11kCpUrPGMTgqp2q/1gwzCquocrN33is0VZ5GFHXZYMM9l6h67v2Q==}
+    engines: {node: '>=10'}
+    dependencies:
+      parse-ms: 2.1.0
     dev: false
 
   /prismjs/1.29.0:
@@ -3355,6 +3422,13 @@ packages:
       minizlib: 2.1.2
       mkdirp: 1.0.4
       yallist: 4.0.0
+    dev: false
+
+  /time-span/4.0.0:
+    resolution: {integrity: sha512-MyqZCTGLDZ77u4k+jqg4UlrzPTPZ49NDlaekU6uuFaJLzPIN1woaRXCbGeqOfxwc3Y37ZROGAJ614Rdv7Olt+g==}
+    engines: {node: '>=10'}
+    dependencies:
+      convert-hrtime: 3.0.0
     dev: false
 
   /tiny-glob/0.2.9:
